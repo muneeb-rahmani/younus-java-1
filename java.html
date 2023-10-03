@@ -1,0 +1,15 @@
+package basicjavaprograms;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class microsoftdriver {
+	
+	public static void main(String[] args) {
+	
+	//	System.setProperty("webdriver.edge.driver","C:\\Users\\admin\\eclipse-workspace\\javaprograms\\driver.exe");
+		WebDriverManager.edgedriver().setup();
+WebDriver driver = new EdgeDriver();
+driver.get("https://www.google.com/");
